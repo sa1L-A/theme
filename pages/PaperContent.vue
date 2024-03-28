@@ -1,6 +1,6 @@
 <template>
-  <div>
+  <div style="text-align: start;">
     <a href="/">Home</a>
-    <Content></Content>
+    <content />
   </div>
 </template>
