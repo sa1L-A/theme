@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
+import Theme from 'vitepress/theme'
 
 import SHeader from './components/SHeader.vue'
 
 import { loadPage } from './routes'
 
 const { frontmatter } = useData()
+const { Layout } = Theme
 </script>
 
 <template>
-  <div class="paper-layout-container">
-    <SHeader />
+  <Layout>
     <component :is="loadPage(frontmatter.layout)" />
-  </div>
+  </Layout>
 </template>
 
 <style scoped>
