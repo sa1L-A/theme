@@ -25,5 +25,7 @@ const THEME_ROUTES = {
  * 如果没有传入布局名称，则默认使用 PAPER_LAYOUT 的路由对象。
  */
 export function loadPage(layout: string): ComponentInternalInstance {
+  console.log(layout)
+
   return THEME_ROUTES[layout || PAPER_LAYOUT]
 }

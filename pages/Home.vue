@@ -6,6 +6,7 @@ const { site } = useData()
 
 <template>
   <div>
+    hi
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
   </div>

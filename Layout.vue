@@ -2,18 +2,14 @@
 import { useData } from 'vitepress'
 import Theme from 'vitepress/theme'
 
-import SHeader from './components/SHeader.vue'
-
 import { loadPage } from './routes'
 
-const { frontmatter } = useData()
+// const { frontmatter } = useData()
 const { Layout } = Theme
 </script>
 
 <template>
-  <Layout>
-    <component :is="loadPage(frontmatter.layout)" />
-  </Layout>
+  <Layout />
 </template>
 
 <style scoped>
